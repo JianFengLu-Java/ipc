@@ -1,0 +1,53 @@
+{
+  "name": "hook2pdf",
+  "version": "2.0.4",
+  "description": "hook learnings pdf file",
+  "main": "./out/main/index.js",
+  "author": "Lujianfeng",
+  "homepage": "lujianfenglll@gmail.com",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/pro-components": "^2.8.6",
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@svgdotjs/svg.js": "^3.2.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "antd": "^5.24.1",
+    "antd-style": "^3.7.1",
+    "d3-path": "^3.1.0",
+    "electron-updater": "^6.1.7",
+    "fsevents": "^2.3.3",
+    "paper": "^0.12.18",
+    "pathseg": "^1.2.1",
+    "react-router-dom": "^7.1.5",
+    "socket.io-client": "^4.8.1",
+    "timers": "^0.1.1"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.3.1"
+  }
+}
